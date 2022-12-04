@@ -238,14 +238,14 @@ a {
   background-color: rgba(233, 215, 167, 0.1);
 }
 
-.hero__wrapper {
-  padding-top: 52px;
-  padding-bottom: 83px;
+.hero {
+  position: relative;
   text-align: center;
 }
-.hero__wrapper::before {
+.hero::before {
   position: absolute;
   top: 10%;
+  right: 0;
   content: " ";
   width: 242px;
   height: 123px;
@@ -253,15 +253,22 @@ a {
   -webkit-filter: blur(225px);
           filter: blur(225px);
 }
-.hero__wrapper::after {
+.hero::after {
   position: absolute;
   top: 10%;
+  right: 0;
   content: " ";
   width: 214px;
   height: 109px;
   background: #d53d5c;
   -webkit-filter: blur(225px);
           filter: blur(225px);
+}
+
+.hero__wrapper {
+  padding-top: 52px;
+  padding-bottom: 83px;
+  text-align: center;
 }
 
 .hero__title {
@@ -274,19 +281,15 @@ a {
   color: #ffce4e;
 }
 
-.hero {
-  position: relative;
-  text-align: center;
-}
-
 .hero__buttons {
-  z-index: 67;
   position: absolute;
+  top: 90%;
+  left: 0;
   padding: 0 22px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  top: 90%;
+  z-index: 67;
 }
 
 .hero__button--inverse {
@@ -304,7 +307,8 @@ a {
 
 .card-wrapper {
   position: relative;
-  padding: 77px 44px 44px 44px;
+  padding-top: 80px;
+  padding-bottom: 40px;
   background: rgba(79, 70, 78, 0.35);
 }
 .card-wrapper::before {
@@ -328,6 +332,10 @@ a {
   background: rgba(96, 231, 206, 0.67);
   -webkit-filter: blur(225px);
           filter: blur(225px);
+}
+
+.article {
+  padding: 0 26.5px;
 }
 
 .card {
@@ -905,7 +913,7 @@ a {
   outline: 1px soloid #ffce4e;
 }
 
-.footer {
+.footer__overlay {
   padding-top: 60px;
   padding-bottom: 10px;
   text-align: center;

@@ -1,11 +1,11 @@
 // TOP
-.hero__wrapper {
-  padding-top: 52px;
-  padding-bottom: 83px;
+.hero {
+  position: relative;
   text-align: center;
   &::before {
     position: absolute;
     top: 10%;
+    right: 0;
     content: " ";
     width: 242px;
     height: 123px;
@@ -15,12 +15,18 @@
   &::after {
     position: absolute;
     top: 10%;
+    right: 0;
     content: " ";
     width: 214px;
     height: 109px;
     background: #d53d5c;
     filter: blur(225px);
   }
+}
+.hero__wrapper {
+  padding-top: 52px;
+  padding-bottom: 83px;
+  text-align: center;
 }
 
 .hero__title {
@@ -34,17 +40,14 @@
 }
 
 // MIDDLE
-.hero {
-  position: relative;
 
-  text-align: center;
-}
 .hero__buttons {
-  z-index: 67;
   position: absolute;
+  top: 90%;
+  left: 0;
   padding: 0 22px;
   display: flex;
-  top: 90%;
+  z-index: 67;
 }
 
 .hero__button--inverse {
@@ -64,7 +67,8 @@
 // BOTTOM
 .card-wrapper {
   position: relative;
-  padding: 77px 44px 44px 44px;
+  padding-top: 80px;
+  padding-bottom: 40px;
   background: rgba(79, 70, 78, 0.35);
 
   &::before {
@@ -91,7 +95,9 @@
     filter: blur(225px);
   }
 }
-
+.article {
+  padding: 0 26.5px;
+}
 .card {
   width: 290px;
   padding: 30px 20px 197px 20px;
