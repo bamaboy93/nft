@@ -104,9 +104,18 @@ a {
   border-radius: 50%;
 }
 
-.section__circle--red::before {
+.section__circle--redX::before {
   background-color: #e03054;
   left: 0;
+}
+
+.section__circle--violetX::before {
+  background-color: #8613a5;
+  left: 0;
+}
+
+.section__circle--red::before {
+  background-color: #e03054;
 }
 
 .section__circle--violet::before {
@@ -729,7 +738,7 @@ a {
   color: #bdaac1;
 }
 
-.categories {
+.categories__overlay {
   padding-top: 100px;
   padding-bottom: 75px;
   background-color: #251928;
@@ -888,6 +897,7 @@ a {
 }
 
 .sub__input {
+  margin-top: 24px;
   margin-bottom: 32px;
   width: 343px;
   padding: 15px 0 15px 32px;

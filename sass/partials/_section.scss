@@ -21,9 +21,16 @@
   height: 84px;
   border-radius: 50%;
 }
-.section__circle--red::before {
+.section__circle--redX::before {
   background-color: $sec-accent-color;
   left: 0;
+}
+.section__circle--violetX::before {
+  background-color: $third-accent-color;
+  left: 0;
+}
+.section__circle--red::before {
+  background-color: $sec-accent-color;
 }
 .section__circle--violet::before {
   background-color: $third-accent-color;
