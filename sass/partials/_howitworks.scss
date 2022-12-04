@@ -1,8 +1,19 @@
-.how {
+.hwt {
+  position: relative;
   padding-top: 80px;
   padding-bottom: 60px;
-  background: url(../../images/blur/8.png);
   text-align: center;
+
+  &::after {
+    position: absolute;
+    top: 30%;
+    right: 0;
+    content: " ";
+    width: 125px;
+    height: 430px;
+    background: rgba(213, 61, 92, 0.8);
+    filter: blur(225px);
+  }
 }
 
 .how__list {

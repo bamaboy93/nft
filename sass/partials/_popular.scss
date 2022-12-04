@@ -1,6 +1,18 @@
 .popular {
+  position: relative;
   padding-bottom: 75px;
   text-align: center;
+
+  &::after {
+    position: absolute;
+    content: " ";
+    top: 10%;
+    right: 0;
+    width: 225px;
+    height: 145px;
+    background: #60e7ce;
+    filter: blur(225px);
+  }
 }
 
 .popular__list {

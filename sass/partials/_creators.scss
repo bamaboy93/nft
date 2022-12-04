@@ -3,6 +3,18 @@
   padding-top: 80px;
   padding-bottom: 50px;
   text-align: center;
+
+  &::after {
+    position: absolute;
+    top: 15%;
+    right: 0;
+    content: " ";
+    width: 228px;
+    height: 167px;
+
+    background: #b1d26f;
+    filter: blur(225px);
+  }
 }
 
 .creators__title {

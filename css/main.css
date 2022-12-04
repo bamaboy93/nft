@@ -73,89 +73,6 @@ a {
   display: none;
 }
 
-.blur {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 375px;
-  height: 842px;
-  background: url(../../images/blur/11.png) no-repeat;
-}
-
-.blur1 {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 375px;
-  height: 836px;
-  background: url(../../images/blur/293.png) no-repeat;
-}
-
-.blur2 {
-  position: absolute;
-  top: 90%;
-  right: 0;
-  width: 254px;
-  height: 413px;
-  background: url(../../images/blur/13.png) no-repeat;
-}
-
-.blur3 {
-  position: absolute;
-  top: 30%;
-  left: 0;
-  width: 375px;
-  height: 1068px;
-  background: url(../../images/blur/9.png);
-}
-
-.blur4 {
-  position: absolute;
-  top: 40%;
-  left: 0;
-  width: 375px;
-  height: 1120px;
-  background: url(../../images/blur/12.png);
-}
-
-.blur5 {
-  position: absolute;
-  top: 50%;
-  left: 0;
-  width: 375px;
-  height: 1141px;
-  background: url(../../images/blur/294.png);
-}
-
-.blur7 {
-  position: absolute;
-  top: 35%;
-  left: 0;
-  width: 375px;
-  height: 1266px;
-  background: url(../../images/blur/292.png);
-}
-
-.blur8 {
-  position: absolute;
-  left: 20%;
-  width: 225px;
-  height: 145px;
-  background: #60e7ce;
-  -webkit-filter: blur(225px);
-          filter: blur(225px);
-}
-
-.blur9 {
-  position: absolute;
-  left: 20%;
-  width: 228px;
-  height: 167px;
-  background: #b1d26f;
-  -webkit-filter: blur(225px);
-          filter: blur(225px);
-}
-
 .section__title {
   font-family: "Oxanium", cursive;
   font-weight: 700;
@@ -326,6 +243,26 @@ a {
   padding-bottom: 83px;
   text-align: center;
 }
+.hero__wrapper::before {
+  position: absolute;
+  top: 10%;
+  content: " ";
+  width: 242px;
+  height: 123px;
+  background: #d53d5c;
+  -webkit-filter: blur(225px);
+          filter: blur(225px);
+}
+.hero__wrapper::after {
+  position: absolute;
+  top: 10%;
+  content: " ";
+  width: 214px;
+  height: 109px;
+  background: #d53d5c;
+  -webkit-filter: blur(225px);
+          filter: blur(225px);
+}
 
 .hero__title {
   font-family: "Oxanium", cursive;
@@ -370,12 +307,56 @@ a {
   padding: 77px 44px 44px 44px;
   background: rgba(79, 70, 78, 0.35);
 }
+.card-wrapper::before {
+  position: absolute;
+  content: " ";
+  top: 65%;
+  right: 20%;
+  width: 228px;
+  height: 127px;
+  background: rgba(96, 231, 206, 0.799);
+  -webkit-filter: blur(225px);
+          filter: blur(225px);
+}
+.card-wrapper::after {
+  position: absolute;
+  content: " ";
+  top: 40%;
+  right: 0;
+  width: 159.01px;
+  height: 88.99px;
+  background: rgba(96, 231, 206, 0.67);
+  -webkit-filter: blur(225px);
+          filter: blur(225px);
+}
 
 .card {
   width: 290px;
   padding: 30px 20px 197px 20px;
   background: radial-gradient(86.63% 85.18% at 22.07% 22.69%, rgba(224, 48, 84, 0.93) 0%, rgba(224, 48, 84, 0) 100%), url(../../images/hero-card-bg.png) no-repeat;
   background-size: cover;
+}
+.card::before {
+  position: absolute;
+  content: " ";
+  top: 55%;
+  right: 20%;
+  width: 195px;
+  height: 128px;
+  background: rgba(96, 231, 206, 0.799);
+  -webkit-filter: blur(225px);
+          filter: blur(225px);
+}
+.card::after {
+  position: absolute;
+  content: " ";
+  top: 45%;
+  right: 0;
+  width: 111px;
+  height: 55px;
+  background: rgba(231, 178, 38, 0.83);
+  -webkit-filter: blur(75px);
+          filter: blur(75px);
 }
 
 .card__box {
@@ -505,7 +486,7 @@ a {
 }
 
 .auctions__wrapper {
-  background: url(../../images/auctionsBG.png);
+  background-color: #251928;
 }
 
 .auctions__title {
@@ -636,11 +617,22 @@ a {
   border: 1px solid #bcb39a;
 }
 
-.how {
+.hwt {
+  position: relative;
   padding-top: 80px;
   padding-bottom: 60px;
-  background: url(../../images/blur/8.png);
   text-align: center;
+}
+.hwt::after {
+  position: absolute;
+  top: 30%;
+  right: 0;
+  content: " ";
+  width: 125px;
+  height: 430px;
+  background: rgba(213, 61, 92, 0.8);
+  -webkit-filter: blur(225px);
+          filter: blur(225px);
 }
 
 .how__list {
@@ -676,8 +668,20 @@ a {
 }
 
 .popular {
+  position: relative;
   padding-bottom: 75px;
   text-align: center;
+}
+.popular::after {
+  position: absolute;
+  content: " ";
+  top: 10%;
+  right: 0;
+  width: 225px;
+  height: 145px;
+  background: #60e7ce;
+  -webkit-filter: blur(225px);
+          filter: blur(225px);
 }
 
 .popular__list {
@@ -778,6 +782,17 @@ a {
   padding-top: 80px;
   padding-bottom: 50px;
   text-align: center;
+}
+.creators::after {
+  position: absolute;
+  top: 15%;
+  right: 0;
+  content: " ";
+  width: 228px;
+  height: 167px;
+  background: #b1d26f;
+  -webkit-filter: blur(225px);
+          filter: blur(225px);
 }
 
 .creators__title {
