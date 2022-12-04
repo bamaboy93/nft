@@ -1,0 +1,50 @@
+body {
+  background-color: $main-bg-color;
+  color: $main-text-color;
+  font-family: $main-font-family;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 2.8;
+}
+.container {
+  margin-left: auto;
+  margin-right: auto;
+
+  padding: 0px 16px;
+
+  @media screen and (min-width: 375px) {
+    width: 375px;
+  }
+
+  @media screen and (min-width: 1600px) {
+    width: 1600px;
+  }
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+a {
+  display: block;
+  text-decoration: none;
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
+}

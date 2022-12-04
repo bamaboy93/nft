@@ -1,0 +1,124 @@
+// TOP
+.hero__wrapper {
+  padding-top: 52px;
+  padding-bottom: 83px;
+
+  text-align: center;
+}
+
+.hero__title {
+  font-family: $add-font-family;
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.5;
+  &--accent {
+    color: $accent-color;
+  }
+}
+
+// MIDDLE
+.hero {
+  position: relative;
+
+  text-align: center;
+}
+.hero__buttons {
+  z-index: 67;
+  position: absolute;
+  padding: 0 22px;
+  display: flex;
+  top: 90%;
+}
+
+.hero__button--inverse {
+  padding: 10px 41px;
+  margin-right: 20px;
+
+  &:hover,
+  &:focus {
+    background-color: $button-hero-bg;
+  }
+}
+
+.hero__button--main {
+  padding: 10px 46px;
+  background-color: $button-hero-bg;
+}
+// BOTTOM
+.card-wrapper {
+  position: relative;
+  padding: 77px 44px 44px 44px;
+  background: rgba(79, 70, 78, 0.35);
+}
+
+.card {
+  width: 290px;
+  padding: 30px 20px 197px 20px;
+  background: radial-gradient(
+      86.63% 85.18% at 22.07% 22.69%,
+      rgba(224, 48, 84, 0.93) 0%,
+      rgba(224, 48, 84, 0) 100%
+    ),
+    url(../../images/hero-card-bg.png) no-repeat;
+  background-size: cover;
+}
+
+.card__box {
+  width: 247px;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 22px 10px 22px;
+  background: linear-gradient(
+    92.8deg,
+    rgb(224, 48, 83) -12.37%,
+    rgba(250, 250, 250, 0.662) 137.41%
+  );
+
+  opacity: 0.95;
+  box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+
+.card__title {
+  font-family: $add-font-family;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.1;
+  letter-spacing: 0.08em;
+  text-transform: capitalize;
+}
+
+.card__desc {
+  font-family: $add-font-family;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 1.2;
+  color: $white-text;
+}
+.postcard__box {
+  width: 290px;
+  padding: 16px 27px 19px 44px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: $white-bg-color;
+}
+.postcard__title {
+  font-family: $add-font-family;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.1;
+  letter-spacing: 0.07em;
+
+  color: $black-text;
+}
+.postcard__desc {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.1;
+
+  color: $card-text-color;
+}
+.postcard__button {
+  padding: 8px 23px 8px 23px;
+}

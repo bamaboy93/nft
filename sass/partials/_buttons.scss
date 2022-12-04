@@ -1,0 +1,31 @@
+.button {
+  display: inline-block;
+  padding: 13px 58px;
+  outline: none;
+  font-weight: 600;
+  line-height: 2;
+  letter-spacing: 0.05em;
+  outline: 1px solid $accent-color;
+  color: inherit;
+  background-color: $button-bg-color;
+  transition: outline 250ms $cubic, color 250ms $cubic,
+    background-color 250ms $cubic;
+
+  &:hover,
+  &:focus {
+    outline: transparent;
+    color: $main-bg-color;
+    background-color: $accent-color;
+  }
+  &--inverse {
+    outline: transparent;
+    color: $main-bg-color;
+    background-color: $accent-color;
+    &:hover,
+    &:focus {
+      outline: 1px solid $accent-color;
+      color: inherit;
+      background-color: $button-bg-color;
+    }
+  }
+}

@@ -1,0 +1,30 @@
+.section__title {
+  font-family: $add-font-family;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.25;
+  z-index: 333;
+}
+
+.section__circle {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 70px;
+}
+.section__circle::before {
+  position: absolute;
+  left: 8%;
+  content: "";
+  width: 84px;
+  height: 84px;
+  border-radius: 50%;
+}
+.section__circle--red::before {
+  background-color: $sec-accent-color;
+  left: 0;
+}
+.section__circle--violet::before {
+  background-color: $third-accent-color;
+}

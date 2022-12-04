@@ -1,0 +1,39 @@
+.popular {
+  padding-bottom: 75px;
+  text-align: center;
+}
+
+.popular__list {
+  margin-bottom: 48px;
+}
+
+.popular__item {
+  padding: 20px;
+  width: 343px;
+
+  background-color: $card-bg-color;
+
+  &:not(:last-child) {
+    margin-bottom: 24px;
+  }
+}
+
+.popular__info {
+  display: flex;
+  align-items: center;
+}
+
+.popular__author {
+  margin-left: 12px;
+  margin-right: 70px;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.7;
+}
+
+.popular__serie {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 2.2;
+  color: $card-text-sec;
+}

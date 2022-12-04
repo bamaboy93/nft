@@ -1,0 +1,37 @@
+.sub {
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 75px;
+  background: linear-gradient(
+    203.88deg,
+    #1c121f -1.37%,
+    rgba(28, 18, 31, 0.21) 105.11%
+  );
+}
+
+.sub__input {
+  margin-bottom: 32px;
+  width: 343px;
+  padding: 15px 0 15px 32px;
+  outline: 1px solid $accent-color;
+  background: transparent;
+  color: $card-text-sec;
+}
+
+.sub__button {
+  padding: 15px 35px;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.5;
+  color: $black-text;
+  background-color: $accent-color;
+  outline: transparent;
+  border: none;
+  transition: background-color 250ms $cubic, outline 250ms $cubic;
+
+  &:hover,
+  &:focus {
+    background-color: transparent;
+    outline: 1px soloid $accent-color;
+  }
+}

@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NFT</title>
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oxanium:wght@500;600;700&family=Work+Sans:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/main.min.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <div class="mobile-overlay">
+      <div class="blur"></div>
+      <div class="blur1"></div>
+      <div class="blur2"></div>
+      <div class="blur3"></div>
+      <div class="blur4"></div>
+      <div class="blur5"></div>
+      <div class="blur6"></div>
+      <div class="blur7"></div>
+      <div class="blur8"></div>
+    </div>
+    <header class="header container">
+      <nav class="header-nav">
+        <a href="./index.html" class="header-nav__logo"
+          ><img
+            src="./images/logo.png"
+            alt="logotype"
+            width="48"
+            height="48"
+            class="header-nav__icon"
+        /></a>
+        <button
+          type="button"
+          class="menu-toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg
+            class="menu-button__icon"
+            width="24"
+            height="24"
+            aria-label="Mobile menu switcher"
+          >
+            <use class="icon-menu" href="./images/sprite.svg#icon-burger"></use>
+          </svg>
+        </button>
+        <div class="menu-container js-menu-container" id="mobile-menu">
+          <button class="menu-toggle js-close-menu">
+            <svg
+              class="menu-button__icon"
+              width="24"
+              height="24"
+              aria-label="Mobile menu switcher"
+            >
+              <use
+                class="icon-close"
+                href="./images/sprite.svg#icon-cross"
+              ></use>
+            </svg>
+          </button>
+          <ul class="mobile-menu">
+            <li class="mobile-menu__item">
+              <a href="#" class="mobile-menu__link">Explore</a>
+            </li>
+            <li class="mobile-menu__item">
+              <a href="#" class="mobile-menu__link">Creators</a>
+            </li>
+            <li class="mobile-menu__item">
+              <a href="#" class="mobile-menu__link">Community</a>
+            </li>
+          </ul>
+          <a href="#" class="button button--menu">Connect Wallet</a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Hero -->
+      <div class="hero">
+        <div class="hero__wrapper">
+          <h1 class="hero__title">
+            Explore, Buy and Sell the
+            <span class="hero__title--accent">Best NFTs!</span>
+          </h1>
+        </div>
+        <div class="hero__buttons">
+          <a href="#" class="button button--inverse hero__button--inverse"
+            >Explore</a
+          >
+          <a href="#" class="button hero__button--main">Create</a>
+        </div>
+      </div>
+      <div class="card-wrapper">
+        <article class="card">
+          <div class="card__box">
+            <div>
+              <h3 class="card__title">Current bid</h3>
+              <p class="card__desc">0.99 ETH</p>
+            </div>
+            <div>
+              <h3 class="card__title">Ends in</h3>
+              <p class="card__desc">25 hrs</p>
+            </div>
+          </div>
+        </article>
+        <div class="postcard__box">
+          <div>
+            <h3 class="postcard__title">Artist</h3>
+            <p class="postcard__desc">@wzard</p>
+          </div>
+          <button class="button button--inverse postcard__button">
+            Start Bid
+          </button>
+        </div>
+      </div>
+      <!-- About Us -->
+      <section class="about container">
+        <h2 class="visually-hidden">About Us</h2>
+        <ul class="about__list">
+          <li class="about__item">
+            <h3 class="about__title">32k+</h3>
+            <p class="about__desc">Artworks</p>
+          </li>
+          <li class="about__item">
+            <h3 class="about__title">20k+</h3>
+            <p class="about__desc">Auctions</p>
+          </li>
+          <li class="about__item">
+            <h3 class="about__title">12k+</h3>
+            <p class="about__desc">Creators</p>
+          </li>
+        </ul>
+      </section>
+      <!-- Clients -->
+      <section class="clients">
+        <h2 class="visually-hidden">Clients</h2>
+        <ul class="clients__list">
+          <li class="clients__item">
+            <div class="clients__box">
+              <img
+                src="./images/coinbase.png"
+                alt="coinbase logo"
+                width="95"
+                height="21"
+              />
+            </div>
+          </li>
+          <li class="clients__item">
+            <div class="clients__box">
+              <img
+                src="./images/blockchain.png"
+                alt="blockchain logo"
+                width="155"
+                height="12"
+              />
+            </div>
+          </li>
+          <li class="clients__item">
+            <div class="clients__box">
+              <img
+                src="./images/binance.png"
+                alt="binance logo"
+                width="120"
+                height="25"
+              />
+            </div>
+          </li>
+          <li class="clients__item">
+            <div class="clients__box">
+              <img
+                src="./images/bitmex.png"
+                alt="binance logo"
+                width="110"
+                height="18"
+              />
+            </div>
+          </li>
+        </ul>
+      </section>
+      <!-- Auctions -->
+      <div class="auctions__wrapper">
+        <section class="auctions__section container">
+          <div class="section__circle section__circle--violet">
+            <h2 class="section__title">Live Auctions</h2>
+          </div>
+          <ul class="auctions__list">
+            <li class="auctions__item">
+              <div class="card__wrapper">
+                <img
+                  class="card__img"
+                  src="./images/image1.jpg"
+                  alt="nft picture"
+                  width="295"
+                  height="318"
+                />
+                <div class="card__time">03:18:24</div>
+              </div>
+              <div class="card__info">
+                <img
+                  src="./images/userM.png"
+                  alt="user icon"
+                  width="42"
+                  height="42"
+                />
+                <div class="card__category">
+                  <h3 class="card__title">Virtual Art</h3>
+                  <p class="card__author">by @wzard</p>
+                </div>
+                <div class="card__desc">
+                  <svg width="24" height="22">
+                    <use href="./images/sprite.svg#icon-like"></use>
+                  </svg>
+                  <p class="card__likes">92</p>
+                </div>
+              </div>
+              <div class="card__price">
+                <h3 class="card__bid">Current Bid</h3>
+                <p class="card__crypto">4.89 ETH</p>
+              </div>
+              <button type="button" class="button card--button">
+                Place a bid
+              </button>
+            </li>
+            <li class="auctions__item">
+              <div class="card__wrapper">
+                <img
+                  class="card__img"
+                  src="./images/image2.jpg"
+                  alt="nft picture"
+                  width="295"
+                  height="318"
+                />
+                <div class="card__time">08:33:21</div>
+              </div>
+              <div class="card__info">
+                <img
+                  src="./images/userF.png"
+                  alt="user icon"
+                  width="42"
+                  height="42"
+                />
+                <div class="card__category">
+                  <h3 class="card__title">Virtual Art</h3>
+                  <p class="card__author">by @emma</p>
+                </div>
+                <div class="card__desc">
+                  <svg width="24" height="22">
+                    <use href="./images/sprite.svg#icon-like"></use>
+                  </svg>
+                  <p class="card__likes">75</p>
+                </div>
+              </div>
+              <div class="card__price">
+                <h3 class="card__bid">Current Bid</h3>
+                <p class="card__crypto">4.89 ETH</p>
+              </div>
+              <button type="button" class="button card--button">
+                Place a bid
+              </button>
+            </li>
+            <li class="auctions__item">
+              <div class="card__wrapper">
+                <img
+                  class="card__img"
+                  src="./images/image3.jpg"
+                  alt="nft picture"
+                  width="295"
+                  height="318"
+                />
+                <div class="card__time">03:18:24</div>
+              </div>
+              <div class="card__info">
+                <img
+                  src="./images/userM.png"
+                  alt="user icon"
+                  width="42"
+                  height="42"
+                />
+                <div class="card__category">
+                  <h3 class="card__title">Virtual Art</h3>
+                  <p class="card__author">by @jason</p>
+                </div>
+                <div class="card__desc">
+                  <svg width="24" height="22">
+                    <use href="./images/sprite.svg#icon-like"></use>
+                  </svg>
+                  <p class="card__likes">47</p>
+                </div>
+              </div>
+              <div class="card__price">
+                <h3 class="card__bid">Current Bid</h3>
+                <p class="card__crypto">4.89 ETH</p>
+              </div>
+              <button type="button" class="button card--button">
+                Place a bid
+              </button>
+            </li>
+          </ul>
+          <a href="#" class="button">View All</a>
+        </section>
+      </div>
+      <!-- How it works -->
+      <section class="how container">
+        <div class="blur8"></div>
+        <h2 class="section__title">How it works</h2>
+        <ul class="how__list">
+          <li class="how__item">
+            <div class="how__circle">
+              <svg width="36" height="36">
+                <use href="./images/sprite.svg#icon-wallet"></use>
+              </svg>
+            </div>
+            <h3 class="how__option">Set up your wallet</h3>
+            <svg width="15" height="120">
+              <use href="./images/sprite.svg#icon-decorative"></use>
+            </svg>
+          </li>
+          <li class="how__item">
+            <div class="how__circle">
+              <svg width="36" height="36">
+                <use href="./images/sprite.svg#icon-bi"></use>
+              </svg>
+            </div>
+            <h3 class="how__option">Create your collection</h3>
+            <svg width="15" height="120">
+              <use href="./images/sprite.svg#icon-decorative"></use>
+            </svg>
+          </li>
+          <li class="how__item">
+            <div class="how__circle">
+              <svg width="36" height="36">
+                <use href="./images/sprite.svg#icon-plus"></use>
+              </svg>
+            </div>
+            <h3 class="how__option">Add your NFTs</h3>
+            <svg width="15" height="120">
+              <use href="./images/sprite.svg#icon-decorative"></use>
+            </svg>
+          </li>
+          <li class="how__item">
+            <div class="how__circle">
+              <svg width="36" height="36">
+                <use href="./images/sprite.svg#icon-gram"></use>
+              </svg>
+            </div>
+            <h3 class="how__option">List them for sale</h3>
+          </li>
+        </ul>
+      </section>
+      <!-- Popular Collections -->
+      <section class="popular container">
+        <div class="section__circle section__circle--red">
+          <h2 class="section__title">Popular Collections</h2>
+        </div>
+        <div class="blur8"></div>
+        <ul class="popular__list">
+          <li class="popular__item">
+            <img
+              src="./images/unsplash.jpg"
+              alt="artwork"
+              width="303"
+              height="178"
+            />
+            <div class="popular__info">
+              <img
+                src="./images/userF.png"
+                alt="user icon"
+                width="42"
+                height="42"
+              />
+
+              <p class="popular__author">@emma</p>
+              <p class="popular__serie">ERC-711</p>
+            </div>
+          </li>
+          <li class="popular__item">
+            <img
+              src="./images/sculpture.jpg"
+              alt="artwork"
+              width="303"
+              height="178"
+            />
+            <div class="popular__info">
+              <img
+                src="./images/userM.png"
+                alt="user icon"
+                width="42"
+                height="42"
+              />
+
+              <p class="popular__author">@wzard</p>
+              <p class="popular__serie">ERC-721</p>
+            </div>
+          </li>
+          <li class="popular__item">
+            <img
+              src="./images/unsplash.jpg"
+              alt="artwork"
+              width="303"
+              height="178"
+            />
+            <div class="popular__info">
+              <img
+                src="./images/userF.png"
+                alt="user icon"
+                width="42"
+                height="42"
+              />
+
+              <p class="popular__author">@emma</p>
+              <p class="popular__serie">ERC-771</p>
+            </div>
+          </li>
+        </ul>
+        <a href="#" class="button">View All</a>
+      </section>
+      <!-- Categories -->
+      <section class="categories container">
+        <h2 class="section__title">Explore By Categories</h2>
+        <ul class="categories__list">
+          <li class="categories__item">
+            <div class="card__overlay">
+              <img
+                class="card__img"
+                src="./images/girl.jpg"
+                alt="artwork"
+                width="295"
+                height="318"
+              />
+              <button type="button" class="card__button">Place a Bid</button>
+            </div>
+            <div class="card__info">
+              <img
+                src="./images/userM.png"
+                alt="user icon"
+                width="42"
+                height="42"
+              />
+              <div class="card__category">
+                <h3 class="card__title">Virtual Art</h3>
+                <p class="card__author">by @wzard</p>
+              </div>
+              <div class="card__desc">
+                <svg width="24" height="22">
+                  <use href="./images/sprite.svg#icon-like"></use>
+                </svg>
+                <p class="card__likes">92</p>
+              </div>
+            </div>
+            <div class="card__price">
+              <h3 class="card__bid">Current Bid</h3>
+              <p class="card__crypto">4.89 ETH</p>
+            </div>
+          </li>
+          <li class="categories__item">
+            <div class="card__overlay">
+              <img
+                class="card__img"
+                src="./images/sculpture2.jpg"
+                alt="artwork"
+                width="295"
+                height="318"
+              />
+              <button type="button" class="card__button">Place a Bid</button>
+            </div>
+            <div class="card__info">
+              <img
+                src="./images/userM.png"
+                alt="user icon"
+                width="42"
+                height="42"
+              />
+              <div class="card__category">
+                <h3 class="card__title">Virtual Art</h3>
+                <p class="card__author">by @wzard</p>
+              </div>
+              <div class="card__desc">
+                <svg width="24" height="22">
+                  <use href="./images/sprite.svg#icon-like"></use>
+                </svg>
+                <p class="card__likes">92</p>
+              </div>
+            </div>
+            <div class="card__price">
+              <h3 class="card__bid">Current Bid</h3>
+              <p class="card__crypto">4.89 ETH</p>
+            </div>
+          </li>
+          <li class="categories__item">
+            <div class="card__overlay">
+              <img
+                class="card__img"
+                src="./images/sculpture3.jpg"
+                alt="artwork"
+                width="295"
+                height="318"
+              />
+              <button type="button" class="card__button">Place a Bid</button>
+            </div>
+            <div class="card__info">
+              <img
+                src="./images/userM.png"
+                alt="user icon"
+                width="42"
+                height="42"
+              />
+              <div class="card__category">
+                <h3 class="card__title">Virtual Art</h3>
+                <p class="card__author">by @wzard</p>
+              </div>
+              <div class="card__desc">
+                <svg width="24" height="22">
+                  <use href="./images/sprite.svg#icon-like"></use>
+                </svg>
+                <p class="card__likes">92</p>
+              </div>
+            </div>
+            <div class="card__price">
+              <h3 class="card__bid">Current Bid</h3>
+              <p class="card__crypto">4.89 ETH</p>
+            </div>
+          </li>
+        </ul>
+        <a href="#" class="button">View All</a>
+      </section>
+      <!-- Creators -->
+      <section class="creators container">
+        <div class="section__circle section__circle--violet">
+          <h2 class="section__title">Top Creators</h2>
+        </div>
+
+        <div class="blur9"></div>
+        <ul class="creators__list">
+          <li class="creators__item">
+            <div class="creators__user">
+              <img
+                src="./images/userM.png"
+                alt="user icon"
+                width="48"
+                height="48"
+              />
+              <div class="creators__userinfo">
+                <p class="creators__author">Wzard Dee</p>
+                <p class="creators__crypto">4.89 ETH</p>
+              </div>
+            </div>
+            <div class="creators__itemsinfo">
+              <p class="creators__quantity">33</p>
+              <p class="creators__items">Items</p>
+            </div>
+          </li>
+          <li class="creators__item">
+            <div class="creators__user">
+              <img
+                src="./images/userB.png"
+                alt="user icon"
+                width="48"
+                height="48"
+              />
+              <div class="creators__userinfo">
+                <p class="creators__author">Matt Law</p>
+                <p class="creators__crypto">2.25 ETH</p>
+              </div>
+            </div>
+            <div class="creators__itemsinfo">
+              <p class="creators__quantity">13</p>
+              <p class="creators__items">Items</p>
+            </div>
+          </li>
+          <li class="creators__item">
+            <div class="creators__user">
+              <img
+                src="./images/userF.png"
+                alt="user icon"
+                width="48"
+                height="48"
+              />
+              <div class="creators__userinfo">
+                <p class="creators__author">Emma Ray</p>
+                <p class="creators__crypto">3.49 ETH</p>
+              </div>
+            </div>
+            <div class="creators__itemsinfo">
+              <p class="creators__quantity">42</p>
+              <p class="creators__items">Items</p>
+            </div>
+          </li>
+          <li class="creators__item">
+            <div class="creators__user">
+              <img
+                src="./images/userYM.png"
+                alt="user icon"
+                width="48"
+                height="48"
+              />
+              <div class="creators__userinfo">
+                <p class="creators__author">Jason Lee</p>
+                <p class="creators__crypto">5.89 ETH</p>
+              </div>
+            </div>
+            <div class="creators__itemsinfo">
+              <p class="creators__quantity">53</p>
+              <p class="creators__items">Items</p>
+            </div>
+          </li>
+        </ul>
+        <a href="#" class="button">View All</a>
+      </section>
+      <!-- Subscribe -->
+      <section class="sub container">
+        <h2 class="section__title">Ready for Next NFT Drop?</h2>
+        <input class="sub__input" type="email" placeholder="info@gmail.com" />
+        <button type="submit" class="sub__button">Subscribe</button>
+      </section>
+    </main>
+    <!-- Footer -->
+    <footer class="footer container">
+      <img
+        class="footer__logo"
+        src="./images/flogo.png"
+        alt="logotype"
+        width="112"
+        height="112"
+      />
+      <p class="footer__desc">
+        Nec, enim sed lacus, magna pharetra. Phasellus tincidunt nulla pharetra
+        gravida est.
+      </p>
+      <div class="footer__actions">
+        <div class="aboutus">
+          <h3 class="footer__title">About Us</h3>
+          <ul>
+            <li class="footer__item">
+              <a class="footer__link" href="#">About NFTs</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Live</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Auctions</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">NFT Blog</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__support">
+          <h3 class="footer__title">Support</h3>
+          <ul>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Help & Support</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Item Details</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Author Profile</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Collection</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <ul class="footer__socials">
+        <li class="footer__socials--item">
+          <a class="footer__scoials--link" href=""
+            ><svg class="footer__socials--icon" width="37" height="26">
+              <use href="./images/sprite.svg#icon-youtube"></use></svg
+          ></a>
+        </li>
+        <li class="footer__socials--item">
+          <a class="footer__scoials--link" href=""
+            ><svg class="footer__socials--icon" width="32" height="26">
+              <use href="./images/sprite.svg#icon-twitter"></use></svg
+          ></a>
+        </li>
+        <li class="footer__socials--item">
+          <a class="footer__scoials--link" href=""
+            ><svg class="footer__socials--icon" width="14" height="27">
+              <use href="./images/sprite.svg#icon-facebook"></use></svg
+          ></a>
+        </li>
+        <li class="footer__socials--item">
+          <a class="footer__scoials--link" href=""
+            ><svg class="footer__socials--icon" width="28" height="27">
+              <use href="./images/sprite.svg#icon-g"></use></svg
+          ></a>
+        </li>
+      </ul>
+      <p class="footer__rights">All rights reserved@2022</p>
+    </footer>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="js/mobile-menu.js"></script>
+  </body>
+</html>

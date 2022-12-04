@@ -1,0 +1,32 @@
+.how {
+  padding-top: 80px;
+  padding-bottom: 60px;
+  background: url(../../images/blur/8.png);
+  text-align: center;
+}
+
+.how__list {
+  margin-top: 50px;
+}
+
+.how__option {
+  margin-bottom: 24px;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.1;
+  text-transform: capitalize;
+  color: $accent-color;
+}
+
+.how__circle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 24px;
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  background-color: #372839;
+}

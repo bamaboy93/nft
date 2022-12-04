@@ -1,0 +1,47 @@
+.menu-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  padding: 100px 100px 0px 100px;
+  background-color: $card-bg-color;
+  z-index: 999;
+  text-align: center;
+
+  transform: translateX(100%);
+  transition: transform 250ms $cubic;
+}
+
+.menu-container.is-open {
+  transform: translateX(0);
+}
+
+.menu-container .menu-toggle {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  color: $accent-color;
+}
+
+.mobile-menu__item {
+  margin-bottom: 40px;
+  line-height: 1.1;
+  letter-spacing: 0.02em;
+}
+.mobile-menu__link {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: inherit;
+  &:hover,
+  &:focus {
+    color: $accent-color;
+    border-bottom: 1px solid $accent-color;
+  }
+}
+
+.button--menu {
+  padding: 0 30px;
+
+  background-color: rgba(233, 215, 167, 0.1);
+}
