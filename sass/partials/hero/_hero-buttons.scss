@@ -1,0 +1,52 @@
+.hero__buttons {
+  position: absolute;
+  z-index: 67;
+
+  @media screen and (max-width: $max-mobile) {
+    bottom: -28px;
+    left: 38px;
+  }
+
+  @media screen and (max-width: $max-tablet) {
+    bottom: -28px;
+    left: 237px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    position: relative;
+    display: block;
+    margin-bottom: 105px;
+    padding: 0;
+    &::before {
+      position: absolute;
+      bottom: -100%;
+      left: 0;
+      z-index: -1;
+      content: " ";
+      width: 402px;
+      height: 208px;
+      background: rgba(231, 178, 38, 0.8);
+      filter: blur(225px);
+    }
+  }
+}
+
+.hero__button--inverse {
+  padding: 11px 28px;
+  margin-right: 20px;
+  font-size: 21px;
+  line-height: 1.2;
+
+  &:hover,
+  &:focus {
+    background-color: $button-hero-bg;
+  }
+}
+
+.hero__button--main {
+  padding: 11px 28px;
+  font-size: 21px;
+  line-height: 1.2;
+
+  background-color: $button-hero-bg;
+}

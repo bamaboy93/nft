@@ -27,6 +27,11 @@
 
 .creators__list {
   margin-bottom: 50px;
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -16px;
+  }
 }
 
 .creators__item {
@@ -38,7 +43,13 @@
   background-color: #302034;
   border-left: 2px solid #e03054;
   &:not(:last-child) {
-    margin-bottom: 24px;
+    @media screen and (max-width: $max-mobile) {
+      margin-bottom: 24px;
+    }
+  }
+  @media screen and (min-width: $tablet) {
+    width: calc((100% - 4 * 16px) / 2);
+    margin: 16px;
   }
 }
 
@@ -82,4 +93,10 @@
 .creators__itemsinfo {
   padding-left: 30px;
   border-left: 2px solid $card-text-color;
+}
+
+.button--creators {
+  @media screen and (min-width: $tablet) {
+    margin-top: 50px;
+  }
 }

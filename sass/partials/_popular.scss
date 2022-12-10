@@ -12,9 +12,21 @@
     height: 145px;
     background: #60e7ce;
     filter: blur(225px);
+    @media screen and (min-width: $desktop) {
+      right: 50%;
+    }
+  }
+  @media screen and (min-width: $desktop) {
+    padding-top: 170px;
+    padding-bottom: 0;
   }
 }
-
+.popular__wrapper {
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    justify-content: center;
+  }
+}
 .popular__list {
   margin-bottom: 48px;
 }

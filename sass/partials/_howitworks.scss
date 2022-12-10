@@ -1,8 +1,9 @@
 .hwt {
   position: relative;
+  text-align: center;
+
   padding-top: 80px;
   padding-bottom: 60px;
-  text-align: center;
 
   &::after {
     position: absolute;
@@ -13,11 +14,38 @@
     height: 430px;
     background: rgba(213, 61, 92, 0.8);
     filter: blur(225px);
+    @media screen and (min-width: $desktop) {
+      top: 0;
+      right: 50%;
+    }
+  }
+
+  @media screen and (min-width: $desktop) {
+    padding-top: 170px;
+    padding-bottom: 0;
   }
 }
 
 .hwt__list {
   margin-top: 50px;
+  @media screen and (min-width: $desktop) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.hwt__item:not(:last-child) {
+  @media screen and (max-width: $max-tablet) {
+    &::after {
+      content: " ";
+      height: 120px;
+      width: 15px;
+      display: inline-block;
+      background-image: url(../../images/vectorVer.png);
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+  }
 }
 
 .hwt__option {
@@ -27,6 +55,9 @@
   line-height: 1.1;
   text-transform: capitalize;
   color: $accent-color;
+  @media screen and (min-width: $desktop) {
+    margin-top: 32px;
+  }
 }
 
 .hwt__circle {
@@ -40,4 +71,9 @@
   height: 72px;
   border-radius: 50%;
   background-color: #372839;
+  @media screen and (min-width: $desktop) {
+    width: 106px;
+    height: 106px;
+    margin-bottom: 0;
+  }
 }

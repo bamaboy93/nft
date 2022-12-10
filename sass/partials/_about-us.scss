@@ -1,10 +1,24 @@
 .about {
   margin-top: 50px;
   margin-bottom: 70px;
+  @media screen and (min-width: $desktop) {
+    display: none;
+  }
 }
 .about__list {
   display: flex;
-  justify-content: space-between;
+
+  @media screen and (max-width: $max-mobile) {
+    justify-content: space-between;
+  }
+  @media screen and (max-width: $max-tablet) {
+    justify-content: space-around;
+  }
+}
+.about__item:not(:last-child) {
+  @media screen and (min-width: $desktop) {
+    margin-right: 80px;
+  }
 }
 
 .about__title {
@@ -12,10 +26,20 @@
   font-weight: 700;
   font-size: 36px;
   line-height: 1.25;
+
+  @media screen and (min-width: $desktop) {
+    font-size: 62px;
+    line-height: 1.25;
+  }
 }
 
 .about__desc {
   font-weight: 400;
   font-size: 16px;
   line-height: 2.2;
+  color: $card-text-sec;
+  @media screen and (min-width: $desktop) {
+    font-size: 24px;
+    line-height: 1.5;
+  }
 }

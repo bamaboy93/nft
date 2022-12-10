@@ -1,0 +1,105 @@
+.card {
+  width: 290px;
+  padding: 30px 20px 197px 20px;
+  background: radial-gradient(
+      86.63% 85.18% at 22.07% 22.69%,
+      rgba(224, 48, 84, 0.93) 0%,
+      rgba(224, 48, 84, 0) 100%
+    ),
+    url(../../images/hero-card-bg.png) no-repeat;
+  background-size: cover;
+  @media screen and (max-width: $max-tablet) {
+    &::before {
+      position: absolute;
+      content: " ";
+      top: 55%;
+      right: 20%;
+      width: 195px;
+      height: 128px;
+
+      background: rgba(96, 231, 206, 0.799);
+      filter: blur(225px);
+    }
+    &::after {
+      position: absolute;
+      content: " ";
+      top: 45%;
+      right: 0;
+      width: 111px;
+      height: 55px;
+      background: rgba(231, 178, 38, 0.83);
+      filter: blur(75px);
+    }
+  }
+
+  @media screen and (min-width: $desktop) {
+    width: 390px;
+    padding: 21px 21px 376px 21px;
+  }
+}
+
+.card__box {
+  width: 247px;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 22px 10px 22px;
+  background: linear-gradient(
+    92.8deg,
+    rgb(224, 48, 83) -12.37%,
+    rgba(250, 250, 250, 0.662) 137.41%
+  );
+
+  opacity: 0.95;
+  box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  @media screen and (min-width: $desktop) {
+    width: 348px;
+  }
+}
+
+.card__title {
+  font-family: $add-font-family;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.1;
+  letter-spacing: 0.08em;
+  text-transform: capitalize;
+}
+
+.card__desc {
+  font-family: $add-font-family;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 1.2;
+  color: $white-text;
+}
+.postcard__box {
+  width: 290px;
+  padding: 16px 27px 19px 44px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: $white-bg-color;
+  @media screen and (min-width: $desktop) {
+    width: 390px;
+  }
+}
+.postcard__title {
+  font-family: $add-font-family;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.1;
+  letter-spacing: 0.07em;
+
+  color: $black-text;
+}
+.postcard__desc {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.1;
+
+  color: $card-text-color;
+}
+.postcard__button {
+  padding: 8px 23px 8px 23px;
+}

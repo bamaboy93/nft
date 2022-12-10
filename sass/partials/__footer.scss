@@ -20,6 +20,9 @@
 .footer__actions {
   display: flex;
   justify-content: space-between;
+  @media screen and (min-width: $tablet) {
+    justify-content: space-around;
+  }
 }
 
 .footer__title {

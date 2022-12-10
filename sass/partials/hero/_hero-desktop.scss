@@ -1,0 +1,64 @@
+.hero-desktop {
+  padding-bottom: 90px;
+  display: flex;
+  justify-content: space-between;
+  &::before {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    content: " ";
+    width: 50vw;
+    height: 915px;
+
+    background: rgba(79, 70, 78, 0.551);
+  }
+
+  @media screen and (max-width: $max-tablet) {
+    display: none;
+  }
+}
+.hero-desktop__leftside {
+  padding-top: 100px;
+  text-align: left;
+}
+.hero-desktop__box {
+  width: 610px;
+  margin-bottom: 70px;
+}
+.hero-desktop__rightside {
+  position: relative;
+  padding-bottom: 100px;
+  padding-top: 145px;
+  &::before {
+    position: absolute;
+    top: 0;
+    right: -30%;
+    z-index: -1;
+    content: " ";
+    width: 312px;
+    height: 312px;
+    border-radius: 50%;
+    background: rgb(224, 48, 83);
+    filter: blur(175px);
+  }
+  &::after {
+    position: absolute;
+    bottom: 0;
+    left: -30%;
+    z-index: -1;
+    content: " ";
+    width: 312px;
+    height: 312px;
+    border-radius: 50%;
+    background: rgba(96, 231, 206, 0.67);
+    filter: blur(225px);
+  }
+}
+
+.hero-desktop__title {
+  font-family: $add-font-family;
+  font-weight: 700;
+  font-size: 74px;
+  line-height: 1.5;
+}

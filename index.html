@@ -30,6 +30,20 @@
             height="48"
             class="header-nav__icon"
         /></a>
+        <div class="header-desktop">
+          <ul class="header-nav__list">
+            <li class="header-nav__item">
+              <a class="header-nav__link" href="#">Explore</a>
+            </li>
+            <li class="header-nav__item">
+              <a class="header-nav__link" href="#">Creators</a>
+            </li>
+            <li class="header-nav__item">
+              <a class="header-nav__link" href="#">Community</a>
+            </li>
+          </ul>
+        </div>
+        <a class="header-nav__button" href="">Connect Wallet</a>
         <button
           type="button"
           class="menu-toggle js-open-menu"
@@ -76,23 +90,37 @@
     </header>
 
     <main>
-      <!-- Hero -->
-      <div class="hero container">
-        <div class="hero__wrapper">
-          <h1 class="hero__title">
-            Explore, Buy and Sell the
-            <span class="hero__title--accent">Best NFTs!</span>
-          </h1>
+      <!-- Desktop Hero -->
+      <div class="hero-desktop container">
+        <div class="hero-desktop__leftside">
+          <div class="hero-desktop__box">
+            <h1 class="hero-desktop__title">
+              Explore, Buy and Sell the
+              <span class="hero__title--accent">Best NFTs!</span>
+            </h1>
+          </div>
+          <div class="hero__buttons">
+            <a href="#" class="button button--inverse hero__button--inverse"
+              >Explore</a
+            >
+            <a href="#" class="button hero__button--main">Create</a>
+          </div>
+          <ul class="about__list">
+            <li class="about__item">
+              <h3 class="about__title">32k+</h3>
+              <p class="about__desc">Artworks</p>
+            </li>
+            <li class="about__item">
+              <h3 class="about__title">20k+</h3>
+              <p class="about__desc">Auctions</p>
+            </li>
+            <li class="about__item">
+              <h3 class="about__title">12k+</h3>
+              <p class="about__desc">Creators</p>
+            </li>
+          </ul>
         </div>
-        <div class="hero__buttons">
-          <a href="#" class="button button--inverse hero__button--inverse"
-            >Explore</a
-          >
-          <a href="#" class="button hero__button--main">Create</a>
-        </div>
-      </div>
-      <div class="card-wrapper">
-        <div class="container">
+        <div class="hero-desktop__rightside">
           <article class="article">
             <div class="card">
               <div class="card__box">
@@ -118,6 +146,46 @@
           </article>
         </div>
       </div>
+      <!-- Hero -->
+      <div class="hero container">
+        <div class="hero__wrapper">
+          <h1 class="hero__title">
+            Explore, Buy and Sell the
+            <span class="hero__title--accent">Best NFTs!</span>
+          </h1>
+        </div>
+        <div class="hero__buttons">
+          <a href="#" class="button button--inverse hero__button--inverse"
+            >Explore</a
+          >
+          <a href="#" class="button hero__button--main">Create</a>
+        </div>
+      </div>
+      <div class="card-wrapper">
+        <article class="article">
+          <div class="card">
+            <div class="card__box">
+              <div>
+                <h3 class="card__title">Current bid</h3>
+                <p class="card__desc">0.99 ETH</p>
+              </div>
+              <div>
+                <h3 class="card__title">Ends in</h3>
+                <p class="card__desc">25 hrs</p>
+              </div>
+            </div>
+          </div>
+          <div class="postcard__box">
+            <div>
+              <h3 class="postcard__title">Artist</h3>
+              <p class="postcard__desc">@wzard</p>
+            </div>
+            <button class="button button--inverse postcard__button">
+              Start Bid
+            </button>
+          </div>
+        </article>
+      </div>
       <!-- About Us -->
       <section class="about container">
         <h2 class="visually-hidden">About Us</h2>
@@ -137,7 +205,7 @@
         </ul>
       </section>
       <!-- Clients -->
-      <section class="clients">
+      <section class="clients container">
         <h2 class="visually-hidden">Clients</h2>
         <ul class="clients__list">
           <li class="clients__item">
@@ -183,124 +251,126 @@
         </ul>
       </section>
       <!-- Auctions -->
-      <div class="auctions__wrapper">
-        <section class="auctions__section container">
+      <div class="auctions__overlay">
+        <section class="auctions container">
           <div class="section__circle section__circle--violet">
             <h2 class="section__title">Live Auctions</h2>
           </div>
-          <ul class="auctions__list">
-            <li class="auctions__item">
-              <div class="card__wrapper">
-                <img
-                  class="card__img"
-                  src="./images/image1.jpg"
-                  alt="nft picture"
-                  width="295"
-                  height="318"
-                />
-                <div class="card__time">03:18:24</div>
-              </div>
-              <div class="card__info">
-                <img
-                  src="./images/userM.png"
-                  alt="user icon"
-                  width="42"
-                  height="42"
-                />
-                <div class="card__category">
-                  <h3 class="card__title">Virtual Art</h3>
-                  <p class="card__author">by @wzard</p>
+          <div class="auctions__wrapper">
+            <ul class="auctions__list">
+              <li class="auctions__item">
+                <div class="card__wrapper">
+                  <img
+                    class="card__img"
+                    src="./images/image1.jpg"
+                    alt="nft picture"
+                    width="295"
+                    height="318"
+                  />
+                  <div class="card__time">03:18:24</div>
                 </div>
-                <div class="card__desc">
-                  <svg width="24" height="22">
-                    <use href="./images/sprite.svg#icon-like"></use>
-                  </svg>
-                  <p class="card__likes">92</p>
+                <div class="card__info">
+                  <img
+                    src="./images/userM.png"
+                    alt="user icon"
+                    width="42"
+                    height="42"
+                  />
+                  <div class="card__category">
+                    <h3 class="card__title">Virtual Art</h3>
+                    <p class="card__author">by @wzard</p>
+                  </div>
+                  <div class="card__desc">
+                    <svg width="24" height="22">
+                      <use href="./images/sprite.svg#icon-like"></use>
+                    </svg>
+                    <p class="card__likes">92</p>
+                  </div>
                 </div>
-              </div>
-              <div class="card__price">
-                <h3 class="card__bid">Current Bid</h3>
-                <p class="card__crypto">4.89 ETH</p>
-              </div>
-              <button type="button" class="button card--button">
-                Place a bid
-              </button>
-            </li>
-            <li class="auctions__item">
-              <div class="card__wrapper">
-                <img
-                  class="card__img"
-                  src="./images/image2.jpg"
-                  alt="nft picture"
-                  width="295"
-                  height="318"
-                />
-                <div class="card__time">08:33:21</div>
-              </div>
-              <div class="card__info">
-                <img
-                  src="./images/userF.png"
-                  alt="user icon"
-                  width="42"
-                  height="42"
-                />
-                <div class="card__category">
-                  <h3 class="card__title">Virtual Art</h3>
-                  <p class="card__author">by @emma</p>
+                <div class="card__price">
+                  <h3 class="card__bid">Current Bid</h3>
+                  <p class="card__crypto">4.89 ETH</p>
                 </div>
-                <div class="card__desc">
-                  <svg width="24" height="22">
-                    <use href="./images/sprite.svg#icon-like"></use>
-                  </svg>
-                  <p class="card__likes">75</p>
+                <button type="button" class="button card--button">
+                  Place a bid
+                </button>
+              </li>
+              <li class="auctions__item">
+                <div class="card__wrapper">
+                  <img
+                    class="card__img"
+                    src="./images/image2.jpg"
+                    alt="nft picture"
+                    width="295"
+                    height="318"
+                  />
+                  <div class="card__time">08:33:21</div>
                 </div>
-              </div>
-              <div class="card__price">
-                <h3 class="card__bid">Current Bid</h3>
-                <p class="card__crypto">4.89 ETH</p>
-              </div>
-              <button type="button" class="button card--button">
-                Place a bid
-              </button>
-            </li>
-            <li class="auctions__item">
-              <div class="card__wrapper">
-                <img
-                  class="card__img"
-                  src="./images/image3.jpg"
-                  alt="nft picture"
-                  width="295"
-                  height="318"
-                />
-                <div class="card__time">03:18:24</div>
-              </div>
-              <div class="card__info">
-                <img
-                  src="./images/userM.png"
-                  alt="user icon"
-                  width="42"
-                  height="42"
-                />
-                <div class="card__category">
-                  <h3 class="card__title">Virtual Art</h3>
-                  <p class="card__author">by @jason</p>
+                <div class="card__info">
+                  <img
+                    src="./images/userF.png"
+                    alt="user icon"
+                    width="42"
+                    height="42"
+                  />
+                  <div class="card__category">
+                    <h3 class="card__title">Virtual Art</h3>
+                    <p class="card__author">by @emma</p>
+                  </div>
+                  <div class="card__desc">
+                    <svg width="24" height="22">
+                      <use href="./images/sprite.svg#icon-like"></use>
+                    </svg>
+                    <p class="card__likes">75</p>
+                  </div>
                 </div>
-                <div class="card__desc">
-                  <svg width="24" height="22">
-                    <use href="./images/sprite.svg#icon-like"></use>
-                  </svg>
-                  <p class="card__likes">47</p>
+                <div class="card__price">
+                  <h3 class="card__bid">Current Bid</h3>
+                  <p class="card__crypto">4.89 ETH</p>
                 </div>
-              </div>
-              <div class="card__price">
-                <h3 class="card__bid">Current Bid</h3>
-                <p class="card__crypto">4.89 ETH</p>
-              </div>
-              <button type="button" class="button card--button">
-                Place a bid
-              </button>
-            </li>
-          </ul>
+                <button type="button" class="button card--button">
+                  Place a bid
+                </button>
+              </li>
+              <li class="auctions__item">
+                <div class="card__wrapper">
+                  <img
+                    class="card__img"
+                    src="./images/image3.jpg"
+                    alt="nft picture"
+                    width="295"
+                    height="318"
+                  />
+                  <div class="card__time">03:18:24</div>
+                </div>
+                <div class="card__info">
+                  <img
+                    src="./images/userM.png"
+                    alt="user icon"
+                    width="42"
+                    height="42"
+                  />
+                  <div class="card__category">
+                    <h3 class="card__title">Virtual Art</h3>
+                    <p class="card__author">by @jason</p>
+                  </div>
+                  <div class="card__desc">
+                    <svg width="24" height="22">
+                      <use href="./images/sprite.svg#icon-like"></use>
+                    </svg>
+                    <p class="card__likes">47</p>
+                  </div>
+                </div>
+                <div class="card__price">
+                  <h3 class="card__bid">Current Bid</h3>
+                  <p class="card__crypto">4.89 ETH</p>
+                </div>
+                <button type="button" class="button card--button">
+                  Place a bid
+                </button>
+              </li>
+            </ul>
+          </div>
           <a href="#" class="button">View All</a>
         </section>
       </div>
@@ -316,33 +386,30 @@
                 <use href="./images/sprite.svg#icon-wallet"></use>
               </svg>
             </div>
+
             <h3 class="hwt__option">Set up your wallet</h3>
-            <svg width="15" height="120">
-              <use href="./images/sprite.svg#icon-decorative"></use>
-            </svg>
           </li>
+
           <li class="hwt__item">
             <div class="hwt__circle">
               <svg width="36" height="36">
                 <use href="./images/sprite.svg#icon-bi"></use>
               </svg>
             </div>
+
             <h3 class="hwt__option">Create your collection</h3>
-            <svg width="15" height="120">
-              <use href="./images/sprite.svg#icon-decorative"></use>
-            </svg>
           </li>
+
           <li class="hwt__item">
             <div class="hwt__circle">
               <svg width="36" height="36">
                 <use href="./images/sprite.svg#icon-plus"></use>
               </svg>
             </div>
+
             <h3 class="hwt__option">Add your NFTs</h3>
-            <svg width="15" height="120">
-              <use href="./images/sprite.svg#icon-decorative"></use>
-            </svg>
           </li>
+
           <li class="hwt__item">
             <div class="hwt__circle">
               <svg width="36" height="36">
@@ -358,178 +425,187 @@
         <div class="section__circle section__circle--violetX">
           <h2 class="section__title">Popular Collections</h2>
         </div>
-        <ul class="popular__list">
-          <li class="popular__item">
-            <img
-              src="./images/unsplash.jpg"
-              alt="artwork"
-              width="303"
-              height="178"
-            />
-            <div class="popular__info">
+        <div class="popular__wrapper">
+          <ul class="popular__list">
+            <li class="popular__item">
               <img
-                src="./images/userF.png"
-                alt="user icon"
-                width="42"
-                height="42"
+                src="./images/unsplash.jpg"
+                alt="artwork"
+                width="303"
+                height="178"
               />
+              <div class="popular__info">
+                <img
+                  src="./images/userF.png"
+                  alt="user icon"
+                  width="42"
+                  height="42"
+                />
 
-              <p class="popular__author">@emma</p>
-              <p class="popular__serie">ERC-711</p>
-            </div>
-          </li>
-          <li class="popular__item">
-            <img
-              src="./images/sculpture.jpg"
-              alt="artwork"
-              width="303"
-              height="178"
-            />
-            <div class="popular__info">
+                <p class="popular__author">@emma</p>
+                <p class="popular__serie">ERC-711</p>
+              </div>
+            </li>
+            <li class="popular__item">
               <img
-                src="./images/userM.png"
-                alt="user icon"
-                width="42"
-                height="42"
+                src="./images/sculpture.jpg"
+                alt="artwork"
+                width="303"
+                height="178"
               />
+              <div class="popular__info">
+                <img
+                  src="./images/userM.png"
+                  alt="user icon"
+                  width="42"
+                  height="42"
+                />
 
-              <p class="popular__author">@wzard</p>
-              <p class="popular__serie">ERC-721</p>
-            </div>
-          </li>
-          <li class="popular__item">
-            <img
-              src="./images/unsplash.jpg"
-              alt="artwork"
-              width="303"
-              height="178"
-            />
-            <div class="popular__info">
+                <p class="popular__author">@wzard</p>
+                <p class="popular__serie">ERC-721</p>
+              </div>
+            </li>
+            <li class="popular__item">
               <img
-                src="./images/userF.png"
-                alt="user icon"
-                width="42"
-                height="42"
+                src="./images/unsplash.jpg"
+                alt="artwork"
+                width="303"
+                height="178"
               />
+              <div class="popular__info">
+                <img
+                  src="./images/userF.png"
+                  alt="user icon"
+                  width="42"
+                  height="42"
+                />
 
-              <p class="popular__author">@emma</p>
-              <p class="popular__serie">ERC-771</p>
-            </div>
-          </li>
-        </ul>
+                <p class="popular__author">@emma</p>
+                <p class="popular__serie">ERC-771</p>
+              </div>
+            </li>
+          </ul>
+        </div>
         <a href="#" class="button">View All</a>
       </section>
       <!-- Categories -->
       <div class="categories__overlay">
         <section class="categories container">
-          <div class="section__circle section__circle--red">
+          <div class="section__circle section__circle--redX">
             <h2 class="section__title">Explore By Categories</h2>
           </div>
-
-          <ul class="categories__list">
-            <li class="categories__item">
-              <div class="card__overlay">
-                <img
-                  class="card__img"
-                  src="./images/girl.jpg"
-                  alt="artwork"
-                  width="295"
-                  height="318"
-                />
-                <button type="button" class="card__button">Place a Bid</button>
-              </div>
-              <div class="card__info">
-                <img
-                  src="./images/userM.png"
-                  alt="user icon"
-                  width="42"
-                  height="42"
-                />
-                <div class="card__category">
-                  <h3 class="card__title">Virtual Art</h3>
-                  <p class="card__author">by @wzard</p>
+          <div class="categories__wrapper">
+            <ul class="categories__list">
+              <li class="categories__item">
+                <div class="card__overlay">
+                  <img
+                    class="card__img"
+                    src="./images/girl.jpg"
+                    alt="artwork"
+                    width="295"
+                    height="318"
+                  />
+                  <button type="button" class="card__button">
+                    Place a Bid
+                  </button>
                 </div>
-                <div class="card__desc">
-                  <svg width="24" height="22">
-                    <use href="./images/sprite.svg#icon-like"></use>
-                  </svg>
-                  <p class="card__likes">92</p>
+                <div class="card__info">
+                  <img
+                    src="./images/userM.png"
+                    alt="user icon"
+                    width="42"
+                    height="42"
+                  />
+                  <div class="card__category">
+                    <h3 class="card__title">Virtual Art</h3>
+                    <p class="card__author">by @wzard</p>
+                  </div>
+                  <div class="card__desc">
+                    <svg width="24" height="22">
+                      <use href="./images/sprite.svg#icon-like"></use>
+                    </svg>
+                    <p class="card__likes">92</p>
+                  </div>
                 </div>
-              </div>
-              <div class="card__price">
-                <h3 class="card__bid">Current Bid</h3>
-                <p class="card__crypto">4.89 ETH</p>
-              </div>
-            </li>
-            <li class="categories__item">
-              <div class="card__overlay">
-                <img
-                  class="card__img"
-                  src="./images/sculpture2.jpg"
-                  alt="artwork"
-                  width="295"
-                  height="318"
-                />
-                <button type="button" class="card__button">Place a Bid</button>
-              </div>
-              <div class="card__info">
-                <img
-                  src="./images/userM.png"
-                  alt="user icon"
-                  width="42"
-                  height="42"
-                />
-                <div class="card__category">
-                  <h3 class="card__title">Virtual Art</h3>
-                  <p class="card__author">by @wzard</p>
+                <div class="card__price">
+                  <h3 class="card__bid">Current Bid</h3>
+                  <p class="card__crypto">4.89 ETH</p>
                 </div>
-                <div class="card__desc">
-                  <svg width="24" height="22">
-                    <use href="./images/sprite.svg#icon-like"></use>
-                  </svg>
-                  <p class="card__likes">92</p>
+              </li>
+              <li class="categories__item">
+                <div class="card__overlay">
+                  <img
+                    class="card__img"
+                    src="./images/sculpture2.jpg"
+                    alt="artwork"
+                    width="295"
+                    height="318"
+                  />
+                  <button type="button" class="card__button">
+                    Place a Bid
+                  </button>
                 </div>
-              </div>
-              <div class="card__price">
-                <h3 class="card__bid">Current Bid</h3>
-                <p class="card__crypto">4.89 ETH</p>
-              </div>
-            </li>
-            <li class="categories__item">
-              <div class="card__overlay">
-                <img
-                  class="card__img"
-                  src="./images/sculpture3.jpg"
-                  alt="artwork"
-                  width="295"
-                  height="318"
-                />
-                <button type="button" class="card__button">Place a Bid</button>
-              </div>
-              <div class="card__info">
-                <img
-                  src="./images/userM.png"
-                  alt="user icon"
-                  width="42"
-                  height="42"
-                />
-                <div class="card__category">
-                  <h3 class="card__title">Virtual Art</h3>
-                  <p class="card__author">by @wzard</p>
+                <div class="card__info">
+                  <img
+                    src="./images/userM.png"
+                    alt="user icon"
+                    width="42"
+                    height="42"
+                  />
+                  <div class="card__category">
+                    <h3 class="card__title">Virtual Art</h3>
+                    <p class="card__author">by @wzard</p>
+                  </div>
+                  <div class="card__desc">
+                    <svg width="24" height="22">
+                      <use href="./images/sprite.svg#icon-like"></use>
+                    </svg>
+                    <p class="card__likes">92</p>
+                  </div>
                 </div>
-                <div class="card__desc">
-                  <svg width="24" height="22">
-                    <use href="./images/sprite.svg#icon-like"></use>
-                  </svg>
-                  <p class="card__likes">92</p>
+                <div class="card__price">
+                  <h3 class="card__bid">Current Bid</h3>
+                  <p class="card__crypto">4.89 ETH</p>
                 </div>
-              </div>
-              <div class="card__price">
-                <h3 class="card__bid">Current Bid</h3>
-                <p class="card__crypto">4.89 ETH</p>
-              </div>
-            </li>
-          </ul>
+              </li>
+              <li class="categories__item">
+                <div class="card__overlay">
+                  <img
+                    class="card__img"
+                    src="./images/sculpture3.jpg"
+                    alt="artwork"
+                    width="295"
+                    height="318"
+                  />
+                  <button type="button" class="card__button">
+                    Place a Bid
+                  </button>
+                </div>
+                <div class="card__info">
+                  <img
+                    src="./images/userM.png"
+                    alt="user icon"
+                    width="42"
+                    height="42"
+                  />
+                  <div class="card__category">
+                    <h3 class="card__title">Virtual Art</h3>
+                    <p class="card__author">by @wzard</p>
+                  </div>
+                  <div class="card__desc">
+                    <svg width="24" height="22">
+                      <use href="./images/sprite.svg#icon-like"></use>
+                    </svg>
+                    <p class="card__likes">92</p>
+                  </div>
+                </div>
+                <div class="card__price">
+                  <h3 class="card__bid">Current Bid</h3>
+                  <p class="card__crypto">4.89 ETH</p>
+                </div>
+              </li>
+            </ul>
+          </div>
           <a href="#" class="button">View All</a>
         </section>
       </div>
@@ -612,7 +688,7 @@
             </div>
           </li>
         </ul>
-        <a href="#" class="button">View All</a>
+        <a href="#" class="button button--creators">View All</a>
       </section>
       <!-- Subscribe -->
       <section class="sub container">

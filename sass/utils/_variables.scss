@@ -24,6 +24,9 @@ $main-font-family: "Work Sans", sans-serif;
 $add-font-family: "Oxanium", cursive;
 // Breackpoints
 $mobile: 375px;
-$desktop: 1600px;
+$max-mobile: 767px;
+$tablet: 768px;
+$max-tablet: 1439px;
+$desktop: 1440px;
 // Transition props
 $cubic: cubic-bezier(0.4, 0, 0.2, 1);

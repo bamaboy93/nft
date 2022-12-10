@@ -1,4 +1,4 @@
-.auctions__wrapper {
+.auctions__overlay {
   background-color: $sec-bg-color;
 }
 .auctions__title {
@@ -9,13 +9,26 @@
   line-height: 1.25;
 }
 
-.auctions__section {
+.auctions {
   padding-top: 75px;
   padding-bottom: 60px;
   text-align: center;
+  @media screen and (min-width: $desktop) {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+}
+.auctions__wrapper {
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    justify-content: center;
+  }
 }
 .auctions__list {
   margin-bottom: 50px;
+  @media screen and (min-width: $desktop) {
+    display: flex;
+  }
 }
 .auctions__item {
   padding: 24px;

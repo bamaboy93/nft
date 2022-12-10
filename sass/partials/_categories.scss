@@ -13,6 +13,12 @@
   line-height: 1.25;
 }
 
+.categories__wrapper {
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    justify-content: center;
+  }
+}
 .categories__list {
   margin-top: 50px;
   margin-bottom: 50px;
