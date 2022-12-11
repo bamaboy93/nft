@@ -41,6 +41,7 @@
   font-weight: 700;
   font-size: 42px;
   line-height: 1.5;
+  text-shadow: $title-text-shadow;
   &--accent {
     color: $accent-color;
   }
@@ -54,7 +55,7 @@
   justify-content: center;
   position: relative;
   padding-top: 80px;
-  padding-bottom: 40px;
+  padding-bottom: 80px;
   background: rgba(79, 70, 78, 0.35);
 
   &::before {

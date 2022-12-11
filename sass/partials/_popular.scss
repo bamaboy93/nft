@@ -38,6 +38,7 @@
 .popular__item {
   padding: 20px;
   background-color: $card-bg-color;
+  box-shadow: $secondary-box-shadow;
 
   @media screen and (min-width: $tablet) and (max-width: $max-tablet) {
     width: calc((100% - 4 * 18px) / 2);

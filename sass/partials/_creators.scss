@@ -40,8 +40,9 @@
   justify-content: space-between;
   width: 343px;
   padding: 16px 25px 25px 25px;
-  background-color: #302034;
-  border-left: 2px solid #e03054;
+  background-color: $secondary-card-bg-color;
+  border-left: 2px solid $sec-accent-color;
+  box-shadow: $secondary-box-shadow;
   &:not(:last-child) {
     @media screen and (max-width: $max-mobile) {
       margin-bottom: 24px;

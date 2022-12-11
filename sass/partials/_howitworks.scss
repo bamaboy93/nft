@@ -94,6 +94,7 @@
   height: 72px;
   border-radius: 50%;
   background-color: #372839;
+  box-shadow: $secondary-box-shadow;
   @media screen and (min-width: $desktop) {
     width: 106px;
     height: 106px;

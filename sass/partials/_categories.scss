@@ -33,6 +33,7 @@
   padding: 24px;
   width: 343px;
   background-color: $card-bg-color;
+  box-shadow: $secondary-box-shadow;
 
   @media screen and (max-width: $max-tablet) {
     &:not(:last-child) {
