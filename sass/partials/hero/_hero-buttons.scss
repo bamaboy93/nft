@@ -4,12 +4,12 @@
 
   @media screen and (max-width: $max-mobile) {
     bottom: -28px;
-    left: 38px;
+    left: 58px;
   }
 
-  @media screen and (max-width: $max-tablet) {
+  @media screen and (min-width: $tablet) and (max-width: $max-tablet) {
     bottom: -28px;
-    left: 237px;
+    left: 254px;
   }
 
   @media screen and (min-width: $desktop) {
@@ -32,10 +32,12 @@
 }
 
 .hero__button--inverse {
-  padding: 11px 28px;
+  width: 124px;
+  padding: 15px 25px;
   margin-right: 20px;
-  font-size: 21px;
-  line-height: 1.2;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.1;
 
   &:hover,
   &:focus {
@@ -44,9 +46,11 @@
 }
 
 .hero__button--main {
-  padding: 11px 28px;
-  font-size: 21px;
-  line-height: 1.2;
+  width: 124px;
+  padding: 15px 30px;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.1;
 
   background-color: $button-hero-bg;
 }

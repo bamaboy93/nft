@@ -8,6 +8,7 @@
   outline: 1px solid $accent-color;
   color: inherit;
   background-color: $button-bg-color;
+  cursor: pointer;
   transition: outline 250ms $cubic, color 250ms $cubic,
     background-color 250ms $cubic;
 

@@ -8,6 +8,7 @@
     ),
     url(../../images/hero-card-bg.png) no-repeat;
   background-size: cover;
+  box-shadow: $main-box-shadow;
   @media screen and (max-width: $max-tablet) {
     &::before {
       position: absolute;
@@ -43,6 +44,7 @@
   display: flex;
   justify-content: space-between;
   padding: 10px 22px 10px 22px;
+
   background: linear-gradient(
     92.8deg,
     rgb(224, 48, 83) -12.37%,
@@ -102,4 +104,5 @@
 }
 .postcard__button {
   padding: 8px 23px 8px 23px;
+  border: none;
 }

@@ -4,6 +4,14 @@
   font-size: 36px;
   line-height: 1.25;
   z-index: 333;
+
+  &--sub {
+    margin-bottom: 25px;
+  }
+  @media screen and (min-width: $desktop) {
+    font-size: 64px;
+    line-height: 2;
+  }
 }
 
 .section__circle {
@@ -20,6 +28,10 @@
   width: 84px;
   height: 84px;
   border-radius: 50%;
+  @media screen and (min-width: $desktop) {
+    width: 110px;
+    height: 110px;
+  }
 }
 .section__circle--redX::before {
   background-color: $sec-accent-color;

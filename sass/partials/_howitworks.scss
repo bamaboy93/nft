@@ -16,7 +16,7 @@
     filter: blur(225px);
     @media screen and (min-width: $desktop) {
       top: 0;
-      right: 50%;
+      right: 30%;
     }
   }
 
@@ -46,8 +46,31 @@
       background-size: contain;
     }
   }
+  @media screen and (min-width: $desktop) {
+    &::after {
+      position: absolute;
+      bottom: 125px;
+      content: " ";
+      height: 15px;
+      width: 166px;
+      display: inline-block;
+      background-image: url(../../images/vectorHor.png);
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+  }
 }
-
+@media screen and (min-width: $desktop) {
+  .hwt__item:first-child::after {
+    left: 225px;
+  }
+  .hwt__item:nth-child(2)::after {
+    left: 585px;
+  }
+  .hwt__item:nth-child(3)::after {
+    left: 915px;
+  }
+}
 .hwt__option {
   margin-bottom: 24px;
   font-weight: 600;

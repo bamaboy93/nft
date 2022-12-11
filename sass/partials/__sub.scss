@@ -1,26 +1,70 @@
+.sub__overlay {
+  @media screen and (min-width: $desktop) {
+    background: linear-gradient(
+        179.78deg,
+        #1c121f 9.98%,
+        rgba(28, 18, 31, 0.21) 81.39%
+      ),
+      url(../../images/pattern.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
+
 .sub {
   text-align: center;
   padding-top: 50px;
   padding-bottom: 75px;
-  background: linear-gradient(
-    203.88deg,
-    #1c121f -1.37%,
-    rgba(28, 18, 31, 0.21) 105.11%
-  );
+  @media screen and (max-width: $max-tablet) {
+    background: linear-gradient(
+      203.88deg,
+      #1c121f -1.37%,
+      rgba(28, 18, 31, 0.21) 105.11%
+    );
+  }
+
+  @media screen and (min-width: $desktop) {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+}
+
+.sub__form {
+  @media screen and (min-width: $tablet) {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 .sub__input {
-  margin-top: 24px;
-  margin-bottom: 32px;
   width: 343px;
   padding: 15px 0 15px 32px;
   outline: 1px solid $accent-color;
   background: transparent;
   color: $card-text-sec;
+  transition: box-shadow 250ms $cubic;
+  @media screen and (max-width: $max-mobile) {
+    margin-bottom: 32px;
+  }
+  @media screen and (min-width: $desktop) {
+    width: 450px;
+    padding: 16px 0 16px 53px;
+  }
+  &:focus {
+    box-shadow: rgba(211, 205, 24, 0.25) 0px 54px 55px,
+      rgba(175, 159, 9, 0.12) 0px -12px 30px,
+      rgba(208, 155, 10, 0.12) 0px 4px 6px,
+      rgba(180, 133, 12, 0.17) 0px 12px 13px,
+      rgba(210, 186, 5, 0.09) 0px -3px 5px;
+    cursor: pointer;
+    outline: 1px solid $accent-color;
+  }
 }
 
 .sub__button {
-  padding: 15px 35px;
+  padding: 10px 35px;
   font-weight: 600;
   font-size: 24px;
   line-height: 1.5;
@@ -28,11 +72,28 @@
   background-color: $accent-color;
   outline: transparent;
   border: none;
-  transition: background-color 250ms $cubic, outline 250ms $cubic;
+  transition: background-color 250ms $cubic, color 250ms $cubic;
+
+  @media screen and (min-width: $desktop) {
+    padding: 11px 45px;
+
+    &::after {
+      position: absolute;
+      top: 0;
+      right: 15%;
+      z-index: 13;
+      content: " ";
+      width: 262px;
+      height: 165px;
+      background: #b1d26f;
+      filter: blur(225px);
+    }
+  }
 
   &:hover,
   &:focus {
-    background-color: transparent;
-    outline: 1px soloid $accent-color;
+    background-color: $button-hero-bg;
+    color: $white-text;
+    outline: 1px solid $accent-color;
   }
 }

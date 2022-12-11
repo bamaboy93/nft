@@ -425,68 +425,125 @@
         <div class="section__circle section__circle--violetX">
           <h2 class="section__title">Popular Collections</h2>
         </div>
-        <div class="popular__wrapper">
-          <ul class="popular__list">
-            <li class="popular__item">
-              <img
-                src="./images/unsplash.jpg"
-                alt="artwork"
-                width="303"
-                height="178"
-              />
-              <div class="popular__info">
-                <img
-                  src="./images/userF.png"
-                  alt="user icon"
-                  width="42"
-                  height="42"
-                />
 
-                <p class="popular__author">@emma</p>
-                <p class="popular__serie">ERC-711</p>
-              </div>
-            </li>
-            <li class="popular__item">
+        <ul class="popular__list">
+          <li class="popular__item">
+            <img
+              src="./images/unsplash.jpg"
+              alt="artwork"
+              width="303"
+              height="178"
+            />
+            <div class="popular__info">
               <img
-                src="./images/sculpture.jpg"
-                alt="artwork"
-                width="303"
-                height="178"
+                src="./images/userF.png"
+                alt="user icon"
+                width="42"
+                height="42"
               />
-              <div class="popular__info">
-                <img
-                  src="./images/userM.png"
-                  alt="user icon"
-                  width="42"
-                  height="42"
-                />
 
-                <p class="popular__author">@wzard</p>
-                <p class="popular__serie">ERC-721</p>
-              </div>
-            </li>
-            <li class="popular__item">
+              <p class="popular__author">@emma</p>
+              <p class="popular__serie">ERC-711</p>
+            </div>
+          </li>
+          <li class="popular__item">
+            <img
+              src="./images/unsplash.jpg"
+              alt="artwork"
+              width="303"
+              height="178"
+            />
+            <div class="popular__info">
               <img
-                src="./images/unsplash.jpg"
-                alt="artwork"
-                width="303"
-                height="178"
+                src="./images/userF.png"
+                alt="user icon"
+                width="42"
+                height="42"
               />
-              <div class="popular__info">
-                <img
-                  src="./images/userF.png"
-                  alt="user icon"
-                  width="42"
-                  height="42"
-                />
 
-                <p class="popular__author">@emma</p>
-                <p class="popular__serie">ERC-771</p>
-              </div>
-            </li>
-          </ul>
-        </div>
-        <a href="#" class="button">View All</a>
+              <p class="popular__author">@emma</p>
+              <p class="popular__serie">ERC-711</p>
+            </div>
+          </li>
+          <li class="popular__item">
+            <img
+              src="./images/sculpture.jpg"
+              alt="artwork"
+              width="303"
+              height="178"
+            />
+            <div class="popular__info">
+              <img
+                src="./images/userM.png"
+                alt="user icon"
+                width="42"
+                height="42"
+              />
+
+              <p class="popular__author">@wzard</p>
+              <p class="popular__serie">ERC-721</p>
+            </div>
+          </li>
+          <li class="popular__item">
+            <img
+              src="./images/sculpture.jpg"
+              alt="artwork"
+              width="303"
+              height="178"
+            />
+            <div class="popular__info">
+              <img
+                src="./images/userM.png"
+                alt="user icon"
+                width="42"
+                height="42"
+              />
+
+              <p class="popular__author">@wzard</p>
+              <p class="popular__serie">ERC-721</p>
+            </div>
+          </li>
+          <li class="popular__item">
+            <img
+              src="./images/unsplash.jpg"
+              alt="artwork"
+              width="303"
+              height="178"
+            />
+            <div class="popular__info">
+              <img
+                src="./images/userF.png"
+                alt="user icon"
+                width="42"
+                height="42"
+              />
+
+              <p class="popular__author">@emma</p>
+              <p class="popular__serie">ERC-771</p>
+            </div>
+          </li>
+          <li class="popular__item">
+            <img
+              src="./images/unsplash.jpg"
+              alt="artwork"
+              width="303"
+              height="178"
+            />
+            <div class="popular__info">
+              <img
+                src="./images/userF.png"
+                alt="user icon"
+                width="42"
+                height="42"
+              />
+
+              <p class="popular__author">@emma</p>
+              <p class="popular__serie">ERC-771</p>
+            </div>
+          </li>
+        </ul>
+
+        <a href="#" class="button popular__button">View All</a>
       </section>
       <!-- Categories -->
       <div class="categories__overlay">
@@ -553,7 +610,7 @@
                     height="42"
                   />
                   <div class="card__category">
-                    <h3 class="card__title">Virtual Art</h3>
+                    <h3 class="card__title">Sculpture</h3>
                     <p class="card__author">by @wzard</p>
                   </div>
                   <div class="card__desc">
@@ -691,89 +748,179 @@
         <a href="#" class="button button--creators">View All</a>
       </section>
       <!-- Subscribe -->
-      <section class="sub container">
-        <h2 class="section__title">Ready for Next NFT Drop?</h2>
-        <input class="sub__input" type="email" placeholder="info@gmail.com" />
-        <button type="submit" class="sub__button">Subscribe</button>
-      </section>
+      <div class="sub__overlay">
+        <section class="sub container">
+          <h2 class="section__title section__title--sub">
+            Ready for Next NFT Drop?
+          </h2>
+          <div class="sub__form">
+            <input
+              class="sub__input"
+              type="email"
+              placeholder="info@gmail.com"
+            />
+            <button type="submit" class="sub__button">Subscribe</button>
+          </div>
+        </section>
+      </div>
     </main>
     <!-- Footer -->
     <div class="footer__overlay">
       <footer class="footer container">
-        <img
-          class="footer__logo"
-          src="./images/flogo.png"
-          alt="logotype"
-          width="112"
-          height="112"
-        />
-        <p class="footer__desc">
-          Nec, enim sed lacus, magna pharetra. Phasellus tincidunt nulla
-          pharetra gravida est.
-        </p>
-        <div class="footer__actions">
-          <div class="aboutus">
-            <h3 class="footer__title">About Us</h3>
-            <ul>
-              <li class="footer__item">
-                <a class="footer__link" href="#">About NFTs</a>
+        <div class="footer-desktop">
+          <img
+            class="footer__logo"
+            src="./images/DesktopFooterLogo.png"
+            alt="logotype"
+            width="194"
+            height="194"
+          />
+          <div class="footer-desktop__info">
+            <p class="footer__desc">
+              Nec, enim sed lacus, magna pharetra. Phasellus tincidunt nulla
+              pharetra gravida est.
+            </p>
+            <ul class="footer__socials">
+              <li class="footer__socials--item">
+                <a class="footer__scoials--link" href=""
+                  ><svg class="footer__socials--icon" width="37" height="26">
+                    <use href="./images/sprite.svg#icon-youtube"></use></svg
+                ></a>
               </li>
-              <li class="footer__item">
-                <a class="footer__link" href="#">Live</a>
+              <li class="footer__socials--item">
+                <a class="footer__scoials--link" href=""
+                  ><svg class="footer__socials--icon" width="32" height="26">
+                    <use href="./images/sprite.svg#icon-twitter"></use></svg
+                ></a>
               </li>
-              <li class="footer__item">
-                <a class="footer__link" href="#">Auctions</a>
+              <li class="footer__socials--item">
+                <a class="footer__scoials--link" href=""
+                  ><svg class="footer__socials--icon" width="14" height="27">
+                    <use href="./images/sprite.svg#icon-facebook"></use></svg
+                ></a>
               </li>
-              <li class="footer__item">
-                <a class="footer__link" href="#">NFT Blog</a>
+              <li class="footer__socials--item">
+                <a class="footer__scoials--link" href=""
+                  ><svg class="footer__socials--icon" width="28" height="27">
+                    <use href="./images/sprite.svg#icon-g"></use></svg
+                ></a>
               </li>
             </ul>
+            <p class="footer__rights">All rights reserved@2022</p>
           </div>
-          <div class="footer__support">
-            <h3 class="footer__title">Support</h3>
-            <ul>
-              <li class="footer__item">
-                <a class="footer__link" href="#">Help & Support</a>
-              </li>
-              <li class="footer__item">
-                <a class="footer__link" href="#">Item Details</a>
-              </li>
-              <li class="footer__item">
-                <a class="footer__link" href="#">Author Profile</a>
-              </li>
-              <li class="footer__item">
-                <a class="footer__link" href="#">Collection</a>
-              </li>
-            </ul>
+          <div class="footer__actions">
+            <div class="aboutus">
+              <h3 class="footer__title">About Us</h3>
+              <ul>
+                <li class="footer__item">
+                  <a class="footer__link" href="#">About NFTs</a>
+                </li>
+                <li class="footer__item">
+                  <a class="footer__link" href="#">Live</a>
+                </li>
+                <li class="footer__item">
+                  <a class="footer__link" href="#">Auctions</a>
+                </li>
+                <li class="footer__item">
+                  <a class="footer__link" href="#">NFT Blog</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer__support">
+              <h3 class="footer__title">Support</h3>
+              <ul>
+                <li class="footer__item">
+                  <a class="footer__link" href="#">Help & Support</a>
+                </li>
+                <li class="footer__item">
+                  <a class="footer__link" href="#">Item Details</a>
+                </li>
+                <li class="footer__item">
+                  <a class="footer__link" href="#">Author Profile</a>
+                </li>
+                <li class="footer__item">
+                  <a class="footer__link" href="#">Collection</a>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
-        <ul class="footer__socials">
-          <li class="footer__socials--item">
-            <a class="footer__scoials--link" href=""
-              ><svg class="footer__socials--icon" width="37" height="26">
-                <use href="./images/sprite.svg#icon-youtube"></use></svg
-            ></a>
-          </li>
-          <li class="footer__socials--item">
-            <a class="footer__scoials--link" href=""
-              ><svg class="footer__socials--icon" width="32" height="26">
-                <use href="./images/sprite.svg#icon-twitter"></use></svg
-            ></a>
-          </li>
-          <li class="footer__socials--item">
-            <a class="footer__scoials--link" href=""
-              ><svg class="footer__socials--icon" width="14" height="27">
-                <use href="./images/sprite.svg#icon-facebook"></use></svg
-            ></a>
-          </li>
-          <li class="footer__socials--item">
-            <a class="footer__scoials--link" href=""
-              ><svg class="footer__socials--icon" width="28" height="27">
-                <use href="./images/sprite.svg#icon-g"></use></svg
-            ></a>
-          </li>
-        </ul>
-        <p class="footer__rights">All rights reserved@2022</p>
+        <div class="footer-mobile">
+          <img
+            class="footer__logo"
+            src="./images/flogo.png"
+            alt="logotype"
+            width="112"
+            height="112"
+          />
+          <p class="footer__desc">
+            Nec, enim sed lacus, magna pharetra. Phasellus tincidunt nulla
+            pharetra gravida est.
+          </p>
+          <div class="footer__actions">
+            <div class="aboutus">
+              <h3 class="footer__title">About Us</h3>
+              <ul>
+                <li class="footer__item">
+                  <a class="footer__link" href="#">About NFTs</a>
+                </li>
+                <li class="footer__item">
+                  <a class="footer__link" href="#">Live</a>
+                </li>
+                <li class="footer__item">
+                  <a class="footer__link" href="#">Auctions</a>
+                </li>
+                <li class="footer__item">
+                  <a class="footer__link" href="#">NFT Blog</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer__support">
+              <h3 class="footer__title">Support</h3>
+              <ul>
+                <li class="footer__item">
+                  <a class="footer__link" href="#">Help & Support</a>
+                </li>
+                <li class="footer__item">
+                  <a class="footer__link" href="#">Item Details</a>
+                </li>
+                <li class="footer__item">
+                  <a class="footer__link" href="#">Author Profile</a>
+                </li>
+                <li class="footer__item">
+                  <a class="footer__link" href="#">Collection</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <ul class="footer__socials">
+            <li class="footer__socials--item">
+              <a class="footer__scoials--link" href=""
+                ><svg class="footer__socials--icon" width="37" height="26">
+                  <use href="./images/sprite.svg#icon-youtube"></use></svg
+              ></a>
+            </li>
+            <li class="footer__socials--item">
+              <a class="footer__scoials--link" href=""
+                ><svg class="footer__socials--icon" width="32" height="26">
+                  <use href="./images/sprite.svg#icon-twitter"></use></svg
+              ></a>
+            </li>
+            <li class="footer__socials--item">
+              <a class="footer__scoials--link" href=""
+                ><svg class="footer__socials--icon" width="14" height="27">
+                  <use href="./images/sprite.svg#icon-facebook"></use></svg
+              ></a>
+            </li>
+            <li class="footer__socials--item">
+              <a class="footer__scoials--link" href=""
+                ><svg class="footer__socials--icon" width="28" height="27">
+                  <use href="./images/sprite.svg#icon-g"></use></svg
+              ></a>
+            </li>
+          </ul>
+          <p class="footer__rights">All rights reserved@2022</p>
+        </div>
       </footer>
     </div>
     <script
