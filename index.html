@@ -16,6 +16,11 @@
       href="https://fonts.googleapis.com/css2?family=Oxanium:wght@500;600;700&family=Work+Sans:wght@400;500;600&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="./node_modules/@splidejs/splide/dist/css/splide-core.min.css"
+    />
+
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
@@ -252,9 +257,128 @@
       </section>
       <!-- Auctions -->
       <div class="auctions__overlay">
-        <section class="auctions container">
+        <section class="auctions">
           <div class="section__circle section__circle--violet">
             <h2 class="section__title">Live Auctions</h2>
+          </div>
+          <div class="carousel">
+            <section class="splide" aria-label="Splide Basic HTML Example">
+              <div class="splide__track">
+                <ul class="splide__list">
+                  <li class="splide__slide auctions__item">
+                    <div class="card__wrapper">
+                      <img
+                        class="card__img"
+                        src="./images/image1.jpg"
+                        alt="nft picture"
+                        width="295"
+                        height="318"
+                      />
+                      <div class="card__time">03:18:24</div>
+                    </div>
+                    <div class="card__info">
+                      <img
+                        src="./images/userM.png"
+                        alt="user icon"
+                        width="42"
+                        height="42"
+                      />
+                      <div class="card__category">
+                        <h3 class="card__title">Virtual Art</h3>
+                        <p class="card__author">by @wzard</p>
+                      </div>
+                      <div class="card__desc">
+                        <svg width="24" height="22">
+                          <use href="./images/sprite.svg#icon-like"></use>
+                        </svg>
+                        <p class="card__likes">92</p>
+                      </div>
+                    </div>
+                    <div class="card__price">
+                      <h3 class="card__bid">Current Bid</h3>
+                      <p class="card__crypto">4.89 ETH</p>
+                    </div>
+                    <button type="button" class="button card--button">
+                      Place a bid
+                    </button>
+                  </li>
+                  <li class="splide__slide auctions__item">
+                    <div class="card__wrapper">
+                      <img
+                        class="card__img"
+                        src="./images/image2.jpg"
+                        alt="nft picture"
+                        width="295"
+                        height="318"
+                      />
+                      <div class="card__time">08:33:21</div>
+                    </div>
+                    <div class="card__info">
+                      <img
+                        src="./images/userF.png"
+                        alt="user icon"
+                        width="42"
+                        height="42"
+                      />
+                      <div class="card__category">
+                        <h3 class="card__title">Virtual Art</h3>
+                        <p class="card__author">by @emma</p>
+                      </div>
+                      <div class="card__desc">
+                        <svg width="24" height="22">
+                          <use href="./images/sprite.svg#icon-like"></use>
+                        </svg>
+                        <p class="card__likes">75</p>
+                      </div>
+                    </div>
+                    <div class="card__price">
+                      <h3 class="card__bid">Current Bid</h3>
+                      <p class="card__crypto">4.89 ETH</p>
+                    </div>
+                    <button type="button" class="button card--button">
+                      Place a bid
+                    </button>
+                  </li>
+                  <li class="splide__slide auctions__item">
+                    <div class="card__wrapper">
+                      <img
+                        class="card__img"
+                        src="./images/image3.jpg"
+                        alt="nft picture"
+                        width="295"
+                        height="318"
+                      />
+                      <div class="card__time">03:18:24</div>
+                    </div>
+                    <div class="card__info">
+                      <img
+                        src="./images/userM.png"
+                        alt="user icon"
+                        width="42"
+                        height="42"
+                      />
+                      <div class="card__category">
+                        <h3 class="card__title">Virtual Art</h3>
+                        <p class="card__author">by @jason</p>
+                      </div>
+                      <div class="card__desc">
+                        <svg width="24" height="22">
+                          <use href="./images/sprite.svg#icon-like"></use>
+                        </svg>
+                        <p class="card__likes">47</p>
+                      </div>
+                    </div>
+                    <div class="card__price">
+                      <h3 class="card__bid">Current Bid</h3>
+                      <p class="card__crypto">4.89 ETH</p>
+                    </div>
+                    <button type="button" class="button card--button">
+                      Place a bid
+                    </button>
+                  </li>
+                </ul>
+              </div>
+            </section>
           </div>
           <div class="auctions__wrapper">
             <ul class="auctions__list">
@@ -371,7 +495,7 @@
               </li>
             </ul>
           </div>
-          <a href="#" class="button">View All</a>
+          <a href="#" class="button button--main">View All</a>
         </section>
       </div>
       <!-- How it works -->
@@ -543,7 +667,7 @@
           </li>
         </ul>
 
-        <a href="#" class="button popular__button">View All</a>
+        <a href="#" class="button button--main">View All</a>
       </section>
       <!-- Categories -->
       <div class="categories__overlay">
@@ -663,7 +787,7 @@
               </li>
             </ul>
           </div>
-          <a href="#" class="button">View All</a>
+          <a href="#" class="button button--main">View All</a>
         </section>
       </div>
       <!-- Creators -->
@@ -745,7 +869,7 @@
             </div>
           </li>
         </ul>
-        <a href="#" class="button button--creators">View All</a>
+        <a href="#" class="button button--main">View All</a>
       </section>
       <!-- Subscribe -->
       <div class="sub__overlay">
@@ -923,6 +1047,7 @@
         </div>
       </footer>
     </div>
+
     <script
       defer
       src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
@@ -930,5 +1055,8 @@
       crossorigin="anonymous"
     ></script>
     <script defer src="js/mobile-menu.js"></script>
+    <script src="./node_modules/@splidejs/splide/dist/js/splide.min.js"></script>
+    <script src="./node_modules/@splidejs/splide-extension-auto-scroll/dist/js/splide-extension-auto-scroll.min.js"></script>
+    <script src="./js/splide.js"></script>
   </body>
 </html>

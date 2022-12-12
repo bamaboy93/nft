@@ -1,6 +1,12 @@
 .auctions__overlay {
   background-color: $sec-bg-color;
 }
+
+@media screen and (max-width: $max-tablet) {
+  .carousel {
+    display: none;
+  }
+}
 .auctions__title {
   margin-bottom: 68px;
   font-family: $add-font-family;
@@ -13,29 +19,31 @@
   padding-top: 75px;
   padding-bottom: 60px;
   text-align: center;
+
   @media screen and (min-width: $desktop) {
     padding-top: 80px;
     padding-bottom: 80px;
   }
 }
 .auctions__wrapper {
-  @media screen and (min-width: $tablet) {
+  @media screen and (max-width: $max-tablet) {
     display: flex;
     justify-content: center;
   }
-}
-.auctions__list {
-  margin-bottom: 50px;
   @media screen and (min-width: $desktop) {
-    display: flex;
+    display: none;
   }
 }
+
 .auctions__item {
   padding: 24px;
   width: 343px;
   background-color: $card-bg-color;
+  box-shadow: $secondary-box-shadow;
   &:not(:last-child) {
-    margin-bottom: 48px;
+    @media screen and (max-width: $max-tablet) {
+      margin-bottom: 48px;
+    }
   }
 }
 .card__wrapper {

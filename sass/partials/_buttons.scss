@@ -18,6 +18,16 @@
     color: $main-bg-color;
     background-color: $accent-color;
   }
+
+  &--main {
+    @media screen and (max-width: $max-tablet) {
+      margin-top: 50px;
+    }
+    @media screen and (min-width: $desktop) {
+      margin-top: 84px;
+    }
+  }
+
   &--inverse {
     outline: transparent;
     color: $main-bg-color;

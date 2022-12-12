@@ -75,10 +75,3 @@
   line-height: 2.2;
   color: $card-text-sec;
 }
-
-.popular__button {
-  margin-top: 50px;
-  @media screen and (min-width: $desktop) {
-    margin-top: 80px;
-  }
-}
